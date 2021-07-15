@@ -2,88 +2,52 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
-    <!--  <form action="">
-        <h3>(Login con Spotify) ¿Viabilidad?.</h3>
-        <h3>Alternativa a Login con Spotify: crear un formulario en el que se solicite datos como canciones, artistas, géneros... favoritos</h3>
-        <label for="">Nombre de usuario <input type="text"></label>
-        <label for="">Contraseña<input type="text"></label>
-        <button type="submit">Enviar</button>
-    </form> -->
+
+  <br>
+  <input type="button" value="0" id="hidden" name="hidden">  
+  <section class="container ">
+    <h1>¿Cansad@ de escuchar siempre las mismas canciones? </h1>
+    <h2>Indícanos algunas de tus canciones favoritas</h2>
+
+    <!-- <form action=""> -->
     <br>
-    <section class="container ">
-        <h1>¿Cansad@ de escuchar siempre las mismas canciones? </h1>
-        <h2>Indícanos algunas de tus canciones favoritas</h2>
 
-        <!-- <form action=""> -->
-        <br>
+    <form class="row g-3 justify-content-center">
 
-        <form class="row g-3 justify-content-center" >
-
-            <section id="seccion" class="row justify-content-center">
-                <div class="col-auto">
-                    <input type="text" class="form-control" id="inputPassword2" placeholder="Nombre de la canción">
-                </div>
-
-                <div class="col-auto">
-                    <button class="btn btn-primary mb-3" id="delete" onclick="botonDelete(event)">-</button>
-                </div>
-                
-            </section>
-            
-
-
-            <!-- <section class="row justify-content-center">
-                <div class="col-auto">
-                    <input type="text" class="form-control" id="inputPassword2" placeholder="Nombre de la canción">
-                </div>
-
-                <div class="col-auto">
-                    <button type="submit" class="btn btn-primary mb-3">-</button>
-                </div>
-                
-            </section> -->
-            
-
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3" id="add">Añadir canción</button>
-            </div>
-            <div class="col-auto">
-                <button type="submit" class="btn btn-primary mb-3">Enviar</button>
-            </div>
-
-        </form>
-        <!-- <label for="exampleFormControlInput1" class="form-label">Nombre de la canción</label>
-        <div class="input-group col-2">
-            <input type="text" class="form-control" id="exampleFormControlInput1" style="width: 200px !important;" placeholder="">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">quitar</button> 
+      <section class="row justify-content-center" id="debajo">
+        <div class="row justify-content-center" id="cancion-0">
+          <div class="col-auto">
+            <input type="text" class="form-control" placeholder="Nombre de la canción">
           </div>
-          
-         <input type="text" placeholder="nombre de la canción"><input type="submit" value="-"><br>
-         <div class="input-group mb-3">
-            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
-            <button class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
-          </div> -->
 
-        <!-- <input type="text" placeholder="nombre de la canción"><input type="submit" value="-"><br>
-        <input type="text" placeholder="nombre de la canción"><input type="submit" value="-"><br>
-        <input type="text" placeholder="nombre de la canción"><input type="submit" value="-"><br>
-        
-        <input type="text" placeholder="nombre de la canción"> <input type="submit" value="-"><br>
+          <div class="col-auto">
+            <input type="button" class="btn btn-primary mb-3" value="-" id="0" onclick="quitar(this.id)"></input>
+          </div>
+        </div>
 
-        <button>Añadir nueva canción</button><input type="submit" value="enviar">
-    </form> -->
-    </section>
+      </section>
 
-<script src="main.js"></script>
+      <div class="col-auto">
+        <input type="button" class="btn btn-primary mb-3" onclick="poner()" id="add" value="añadir cancion"></input>
+      </div>
+      <div class="col-auto">
+        <button type="submit" class="btn btn-primary mb-3">Enviar</button>
+      </div>
+
+    </form>
+
+  </section>
+
+  <script src="anadir.js"></script>
 </body>
 
 </html>
